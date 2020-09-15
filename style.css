@@ -31,11 +31,18 @@ body {
 
 .heading {
     text-align: center;
+    font-family: Arial;
+    padding: 50px
+}
+.description-text {
+    color: grey;
+    font-weight: lighter;
 }
 
 .content-left {
     grid-area: leftArea;
     background-color: red;
+
 }
 
 .content-right {
