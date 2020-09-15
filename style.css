@@ -2,6 +2,26 @@ body {
     margin: 0px;
 }
 
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: solid thin #EEE;
+}
+
+.logo-container{
+    padding-left: 80px;
+    font-family: Brush Script MT;
+    font-size: 20px;
+    line-height: 0px;
+    
+}
+
+.menu{
+    align-self: center;
+    padding-right: 80px;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
