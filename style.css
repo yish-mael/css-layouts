@@ -92,8 +92,10 @@ body {
     background-color: blue;
 }
 
-.cta {
+.middle-break {
+    padding: 60px;
     text-align: center;
+    background-color: #E1EAF1;
 }
 
 .sub-content {
