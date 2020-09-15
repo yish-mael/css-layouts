@@ -89,7 +89,34 @@ body {
 
 .content-right {
     grid-area: rightArea;
-    background-color: blue;
+    padding-right: 70px;
+}
+.form-section {
+    background-color: #E1EAF1;
+    padding: 80px;
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    height: 50px;
+    border: solid thin #E1EAF1;
+    padding-left: 10px;
+}
+select {
+    width: 100%;
+    height: 50px;
+    border: solid thin #E1EAF1;
+    padding-left: 10px;
+}
+button {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.form-item {
+    padding-top: 10px
 }
 
 .middle-break {
