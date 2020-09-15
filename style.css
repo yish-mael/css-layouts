@@ -29,7 +29,7 @@ body {
 
 .sub-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "item1 item2 item3" 
                          ". item5 ." 
@@ -37,22 +37,23 @@ body {
 }
 
 #item-1 {
-    grid-area: item1 ;
+    grid-area: item1;
 }
 #item-2 {
-    grid-area: item2 ;
+    grid-area: item2;
 }
 #item-3 {
-    grid-area: item3 ;
+    grid-area: item3;
 }
 #item-4 {
     grid-area: item4;
 }
 #item-5 {
     grid-area: item5;
-    padding-top: 40px;
+    display: flex;
+    align-items: flex-end;
 }
-tem-6 {
+#item-6 {
     grid-area: item6;
 }
 #item-7 {
