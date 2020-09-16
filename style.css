@@ -3,11 +3,23 @@ body {
     font-family: Arial;
 }
 
+@media screen and (max-width: 849px) {
+
+    .content-right {
+        padding: 10%;
+        padding-top: 0%;
+    }
+    .content-left {
+        padding: 10%;
+        padding-top: 0%;
+    }
+}
+
 @media screen and (min-width: 850px) {
 
     .main-content {
         display: grid;
-        grid-template-columns: 57% 40%;
+        grid-template-columns: minmax(65%, 35%) minmax(300px, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas: "leftArea rightArea";
         grid-column-gap: 3%;
@@ -40,6 +52,16 @@ body {
         padding-left: 70px;
     }
 
+    .form-section {
+        background-color: #E1EAF1;
+        padding: 80px;
+    }
+
+    .ordered-list {
+        display:flex;
+        justify-content: space-evenly;
+    }
+
 }
 
 .item-img-bg {
@@ -70,12 +92,15 @@ body {
 .black-text {
     color: black;
 }
+
 .ordered-list {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .number-list {
-    padding-top: 15px;
+    padding: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
@@ -126,9 +151,6 @@ body {
     font-weight: lighter;
 }
 
-.content-left {
-    padding: 50px;
-}
 
 .testimonial {
     display: flex;
@@ -147,21 +169,20 @@ body {
  width: 100%;
 }
 
-.content-right {
-    padding: 50px;
-}
+
+
 .form-section {
     background-color: #E1EAF1;
-    padding: 80px;
+    padding: 10%;
 }
 input[type=text], input[type=email] {
-    width: 100%;
+    width: 90%;
     height: 50px;
     border: solid thin #E1EAF1;
     padding-left: 10px;
 }
 select {
-    width: 100%;
+    width: 90%;
     height: 50px;
     border: solid thin #E1EAF1;
     padding-left: 10px;
@@ -218,13 +239,14 @@ button {
     text-align: center;
     border-top: solid thin #E1EAF1;
     border-bottom: solid thin #E1EAF1;
-    padding: 50px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-
-
+.sub-content {
+    padding: 30px;
+}
 
 .footer {
     text-align: center;
