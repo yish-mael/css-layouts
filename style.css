@@ -3,10 +3,31 @@ body {
     font-family: Arial;
 }
 
+.item-img-bg {
+    background-color: #E1EAF1;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50%;
+    color: #E1EAF1;
+}
+
+.item-img-bg-2 {
+    background-color: #E1EAF1;
+    padding: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    color: #E1EAF1;
+}
+
+.light-gray-text {
+    color: #CCC;
+}
+
 .gray-text {
     color: gray;
 }
-
 .black-text {
     color: black;
 }
@@ -40,6 +61,15 @@ body {
     font-family: Brush Script MT;
     font-size: 20px;
     line-height: 0px;
+    
+}
+
+.logo{
+    font-family: Brush Script MT;
+    font-size: 30px;
+    line-height: 0px;
+    padding: 30px;
+    padding-bottom: 10px;
     
 }
 
@@ -132,6 +162,7 @@ button {
     grid-template-areas: "item1 item2 item3" 
                          ". item5 ." 
                          "item7 item8 item9";
+    padding: 80px;
 }
 
 #item-1 {
@@ -166,9 +197,16 @@ button {
 
 .sub-content-2 {
     text-align: center;
-    border-top: solid thin black;
-    border-bottom: solid thin black;
+    border-top: solid thin #E1EAF1;
+    border-bottom: solid thin #E1EAF1;
+    padding: 200px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .footer {
     text-align: center;
+}
+
+.small-btn {
+    width: 200px;
 }
