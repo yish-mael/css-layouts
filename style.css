@@ -3,6 +3,45 @@ body {
     font-family: Arial;
 }
 
+@media screen and (min-width: 850px) {
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 57% 40%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "leftArea rightArea";
+        grid-column-gap: 3%;
+    }
+
+    .sub-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "item1 item2 item3" 
+                             ". item5 ." 
+                             "item7 item8 item9";
+        padding: 80px;
+    }
+
+
+    .sub-content-2 {
+        padding: 200px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .content-right {
+        grid-area: rightArea;
+        padding-right: 70px;
+    }
+
+    .content-left {
+        grid-area: leftArea;
+        padding-left: 70px;
+    }
+
+}
+
 .item-img-bg {
     background-color: #E1EAF1;
     padding: 15px;
@@ -78,14 +117,6 @@ body {
     padding-right: 80px;
 }
 
-.main-content {
-    display: grid;
-    grid-template-columns: 57% 40%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "leftArea rightArea";
-    grid-column-gap: 3%;
-}
-
 .heading {
     text-align: center;
     padding: 50px;
@@ -96,8 +127,7 @@ body {
 }
 
 .content-left {
-    grid-area: leftArea;
-    padding-left: 70px;
+    padding: 50px;
 }
 
 .testimonial {
@@ -118,8 +148,7 @@ body {
 }
 
 .content-right {
-    grid-area: rightArea;
-    padding-right: 70px;
+    padding: 50px;
 }
 .form-section {
     background-color: #E1EAF1;
@@ -153,16 +182,6 @@ button {
     padding: 60px;
     text-align: center;
     background-color: #E1EAF1;
-}
-
-.sub-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "item1 item2 item3" 
-                         ". item5 ." 
-                         "item7 item8 item9";
-    padding: 80px;
 }
 
 #item-1 {
@@ -199,10 +218,14 @@ button {
     text-align: center;
     border-top: solid thin #E1EAF1;
     border-bottom: solid thin #E1EAF1;
-    padding: 200px;
+    padding: 50px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
+
+
+
 .footer {
     text-align: center;
 }
